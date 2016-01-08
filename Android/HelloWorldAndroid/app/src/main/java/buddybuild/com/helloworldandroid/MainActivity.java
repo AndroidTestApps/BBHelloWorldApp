@@ -13,8 +13,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        String deviceVar = BuddyBuild.getValueForDeviceKey("DEVICE_VAR");
         TextView textView = (TextView) this.findViewById(R.id.myTextBox);
-        textView.setText(BuildConfig.VERSION_CODE + " - " + BuildConfig.VERSION_NAME);
+        textView.setText(deviceVar + BuildConfig.VERSION_CODE + " - " + BuildConfig.VERSION_NAME);
     }
 
 
