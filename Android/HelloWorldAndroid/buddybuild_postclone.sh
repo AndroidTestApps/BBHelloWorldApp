@@ -1,1 +1,1 @@
-echo "PostBuild script"
+echo "PostClone script"
