@@ -14,7 +14,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String deviceVar = BuddyBuild.getValueForDeviceKey("DEVICE_VAR");
+        //String deviceVar = BuddyBuild.getValueForDeviceKey("DEVICE_VAR");
+        String deviceVar = "undefined";
         TextView textView = (TextView) this.findViewById(R.id.myTextBox);
         textView.setText(deviceVar + BuildConfig.VERSION_CODE + " - " + BuildConfig.VERSION_NAME);
     }
