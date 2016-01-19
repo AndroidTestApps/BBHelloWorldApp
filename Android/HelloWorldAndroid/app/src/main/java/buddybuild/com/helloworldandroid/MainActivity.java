@@ -18,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
         String deviceVar = "undefined";
         TextView textView = (TextView) this.findViewById(R.id.myTextBox);
         textView.setText(deviceVar + BuildConfig.VERSION_CODE + " - " + BuildConfig.VERSION_NAME);
+
+        throw new Exception("Crap!");
     }
 
 
