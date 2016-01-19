@@ -12,6 +12,8 @@ buildscript {
     }
 }
 
+System.testCrap()
+
 allprojects {
     repositories {
         jcenter()
