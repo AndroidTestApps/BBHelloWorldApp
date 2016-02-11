@@ -21,6 +21,17 @@ android {
         pro {
             versionName = "gradle"
         }
+
+        free {
+            versionName = "bugger"
+        }
+    }
+
+    sourceSets {
+        free {
+            manifest.srcFile "src/free/AndroidManifest.xml"
+            res.srcDirs = ["src/free/res"]
+        }
     }
 }
 
