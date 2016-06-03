@@ -11,15 +11,24 @@ android {
         versionCode 1
         versionName "1.0"
     }
+//    signingConfigs {
+//        release {
+//            storeFile file("/Users/rasharab/keys/mykeystore.keystore")
+//            storePassword "password"
+//            keyAlias "myalias"
+//            keyPassword "password"
+//        }
+//    }
+
     buildTypes {
-        release {
-            minifyEnabled false
+        debug {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-    productFlavors {
-        pro {
-            versionName = "gradle"
+        release {
+            //signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
