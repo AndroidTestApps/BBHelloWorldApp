@@ -19,7 +19,8 @@ public class MainActivity extends ActionBarActivity {
         TextView textView = (TextView) this.findViewById(R.id.myTextBox);
         textView.setText(deviceVar + BuildConfig.VERSION_CODE + " - " + BuildConfig.VERSION_NAME);
 
-        throw new java.lang.RuntimeException("Crap!");
+        MyTest myTest = new MyTest();
+        myTest.forceCrashInMyApp();
     }
 
 
