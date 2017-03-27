@@ -16,8 +16,8 @@ android {
         applicationId "buddybuild.com.helloworldandroid"
         minSdkVersion 19
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "100"
     }
     buildTypes {
         release {
