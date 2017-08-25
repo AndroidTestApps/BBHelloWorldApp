@@ -1,1 +1,0 @@
-echo "Environment variable: $BUDDYBUILD_ENV_VAR"
